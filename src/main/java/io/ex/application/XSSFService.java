@@ -28,7 +28,7 @@ public class XSSFService {
   static String path;
 
   static {
-    path = Optional.ofNullable(System.getenv("HSTORY_PATH")).orElse(URI.create(System.getProperty("user.dir")+"/stocks.xlsx").getPath());
+    path = Optional.ofNullable(System.getenv("HSTORY_PATH")).orElse(URI.create(System.getProperty("user.dir")+ File.separator +"stocks.xlsx").getPath());
     
   }
 
